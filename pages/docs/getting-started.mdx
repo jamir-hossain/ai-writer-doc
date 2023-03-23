@@ -1,0 +1,147 @@
+### Installation
+
+import { Tab, Tabs } from "nextra-theme-docs";
+
+**Prerequisites:**
+
+<ul className="list-disc pl-6 mt-4">
+  <li>PHP >= 7.4.0</li>
+  <li>Composer</li>
+  <li>Git</li>
+  <li>Node.js >= 16.x</li>
+  <li>NPM or Yarn</li>
+</ul>
+
+**Step 1:** Install project dependencies
+
+<p>
+  Navigate to the project directory and install project dependencies by running
+  the following command:
+</p>
+
+```bash filename="composer""
+composer install
+```
+
+**Step 2:** Create a .env file
+
+<p>
+  Create a .env file by copying the .env.example file and updating the database
+  credentials and other configuration variables.
+</p>
+
+```bash filename="make env file"
+cp .env.example .env
+```
+
+**Step 3:** Generate a new application key
+
+<p>Generate a new application key by running the following command:</p>
+
+```bash filename="generate public key"
+php artisan key:generate
+```
+
+### Deployment
+
+**Now it's ready to deploy in your server.**
+
+<p>
+  Before deploying your Laravel application, it is important to ensure that the
+  server meets the necessary requirements. This includes installing PHP 7.4 or
+  later, Composer, Node.js, and a database such as MySQL. PHP is required to run
+  Laravel, while Composer is used to install the application's dependencies.
+  Node.js is necessary for installing dependencies of front-end frameworks.
+  Finally, a database such as MySQL is needed to store and manage your
+  application's data. By making sure that these tools are installed on the
+  server, you can ensure that your Laravel application will run smoothly and
+  efficiently. After complete deployment, you need to follow bellow
+  instructions.
+</p>
+
+### Necessary Setup
+
+import { Card, Cards } from "nextra-theme-docs";
+
+<p className="mt-4">
+  **Step 1:** When successfully done deployment, goto to your app url got to the
+  `/install` route.
+</p>
+<p>
+  Example `https://your-domain.com/install` then you will see the below page and
+  click the `Check Requirement` button
+</p>
+
+<Card image>
+  <>![](/assets/installer-one.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 2:** Now here Laravel Installer will check the server requirements. If
+  the requirement is ok then you will see the success checkmark otherwise you
+  will see the red error checkmark. If server requirements is ok then you can
+  click `Check Permission` button to got to next step
+</p>
+
+<Card image>
+  <>![](/assets/installer-two.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 3:** Now here Laravel Installer will check the app permissions. If the
+  permissions is ok then you will see the success checkmark otherwise you will
+  see the red error checkmark. If app permissions is ok then you can click
+  `Configure Environment` button to got to next step
+</p>
+
+<Card image>
+  <>![](/assets/installer-three.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 4:** In here you will get two option to confiture your environment. One
+  is from mode and another one is classic mode. You can any one to got to next
+  step
+</p>
+
+<Card image>
+  <>![](/assets/installer-four.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 5:** If you select the classic mode to configure your environment, then
+  you have to set up the environment with the key-value pair.
+</p>
+
+<Card image>
+  <>![](/assets/installer-five.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 6:** When you you will select form mode to setup your environment, then
+  you can see the below interface. Now you can setup your environment down
+  below. When you will finish the environment setup, then laravel Installer will
+  create your database table seed your database also.
+</p>
+
+<Card image>
+  <>![](/assets/installer-six.jpg)</>
+</Card>
+
+<Card image>
+  <>![](/assets/installer-seven.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  **Step 7:** When will be environment configure successfully done, then you
+  will see the report of table migration and database seeder, as like below
+</p>
+
+<Card image>
+  <>![](/assets/installer-eight.jpg)</>
+</Card>
+
+<p className="mt-6 mb-3">
+  Congratulations, you have successfully setup your app configuration by using
+  the Laravel Installer package.
+</p>
