@@ -1,0 +1,101 @@
+### Overview
+
+<p className="mt-4">
+  Once you have successfully set up your environment, the next step is to log in as a super admin from the login page. Upon logging in, you will be redirected to the App Dashboard where you should set up some essential settings to make your application workable.
+
+</p>
+
+<p className="my-4">
+  The necessary settings that you should configure include authentication
+  settings, global settings, SMTP settings, and payment settings. Those
+  necessary settings you should do, these are mentioned below.
+</p>
+
+<p className="mb-6">
+  Overall, setting up these necessary settings will ensure that your application
+  runs smoothly and that users have a seamless experience when using your
+  application. By taking the time to configure these settings, you can ensure
+  that your application is secure, user-friendly, and fully functional.
+</p>
+
+### Global Settings
+
+import { Card, Cards } from "nextra-theme-docs";
+
+<p className="my-4">
+  Global settings are important settings that contain global information for
+  your application, such as the app name, email, URL, and timezone. One of the
+  most crucial settings is to set the OpenAI API key. This key is required for
+  your application to create content using OpenAI's powerful language model.
+  Without it, your application will not be able to generate content, which could
+  severely limit its functionality. Therefore, it is essential to ensure that
+  the OpenAI API key is properly configured and that your application can access
+  it without any issues. By setting this key, you can unlock the full potential
+  of OpenAI's language model and provide your users with powerful content
+  generation capabilities.
+</p>
+
+<Card image>
+  <>![](/assets/pages/global-settings.png)</>
+</Card>
+
+### Auth Settings
+
+<p className="my-4">
+  In the application's authentication settings, you will find two options for
+  signing up with Google and Facebook. From this section, you can activate or
+  deactivate these sign-up systems according to your preferences. If you decide
+  to activate them, you will need to provide certain details such as client Id,
+  client secret, and redirect URL. These details are essential for setting up
+  authentication with these platforms, and you must ensure that they are
+  provided accurately. Once you have provided these details, your users will be
+  able to sign up and log in to your application using their Google or Facebook
+  accounts. This can help to streamline the authentication process and provide a
+  convenient sign-up option for users who prefer to use their social media
+  accounts. However, if you decide to deactivate these sign-up systems, your
+  users will only be able to create accounts through other methods provided by
+  your application.
+</p>
+
+<Card image>
+  <>![](/assets/pages/auth-settings.png)</>
+</Card>
+
+### SMTP Settings
+
+<p className="my-4">
+  SMTP settings are important for any Laravel application that requires sending
+  out email notifications or alerts. In your Laravel app, you can configure SMTP
+  settings to ensure that emails are delivered successfully. This involves
+  setting up email templates, SMTP settings, and an email service provider such
+  as Gmail, Yahoo, or Outlook. By providing accurate SMTP settings, your
+  application can authenticate and establish a secure connection with the email
+  service provider, making it easier to send out emails reliably. Additionally,
+  you can configure other settings such as email encryption, port numbers, and
+  message throttling to further customize your SMTP settings according to your
+  needs. Overall, proper SMTP settings can help ensure that your application's
+  emails are delivered successfully and enhance the user experience.
+</p>
+
+<Card image>
+  <>![](/assets/pages/smtp-settings.png)</>
+</Card>
+
+### Payment Settings
+
+<p className="mt-6 mb-3">
+  The payment settings in your application are crucial as they determine how
+  users can pay for goods or services. In your application, you will find three
+  payment gateway options, including Stripe, Paddle, and Razorpay. From this
+  section, you can activate or deactivate these payment gateways based on your
+  preferences. If you choose to activate them, you will need to provide certain
+  payment information such as api key, api secret and other relevant payment
+  details. By providing accurate payment information, you can ensure that users
+  can pay for goods or services conveniently and securely. By configuring these
+  settings properly, you can provide a seamless payment experience for your
+  users and boost customer satisfaction.
+</p>
+
+<Card image>
+  <>![](/assets/pages/payment-settings.png)</>
+</Card>
