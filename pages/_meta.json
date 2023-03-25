@@ -1,14 +1,7 @@
 {
-  "index": {
-    "type": "page",
-    "title": "Nextra",
-    "display": "hidden",
-    "theme": {
-      "layout": "raw"
-    }
-  },
-  "docs": {
-    "type": "page",
-    "title": "Documentation"
-  }
+  "index": "Introduction",
+  "getting-started": "Getting Started",
+  "app-settings": "App Settings",
+  "pricing-management": "Pricing Management",
+  "video-instruction": "Video Instruction"
 }
