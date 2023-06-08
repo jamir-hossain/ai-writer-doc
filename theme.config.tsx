@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 
 const logo = (
   <div className="flex items-center">
-    <img className="w-8 h-8" src="/assets/ai-writer.png" alt="" />
-    <p className="text-lg font-medium ml-4">AI-Writer</p>
+    <img className="w-8 h-8" src="/assets/FastAI.png" alt="" />
+    <p className="text-lg font-medium ml-4">FastAI</p>
   </div>
 );
 
@@ -105,7 +105,7 @@ const config: DocsThemeConfig = {
             <span>UI-Lib</span>
           </a>
         </div>
-        <p className="mt-6 text-xs">© {new Date().getFullYear()} AI-Writer</p>
+        <p className="mt-6 text-xs">© {new Date().getFullYear()} FastAI</p>
       </div>
     ),
   },

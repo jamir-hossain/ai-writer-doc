@@ -1,147 +1,124 @@
 ### Installation
 
-import { Tab, Tabs } from "nextra-theme-docs";
-
-**Prerequisites:**
-
-<ul className="list-disc pl-6 mt-4">
-  <li>PHP >= 7.4.0</li>
-  <li>Composer</li>
-  <li>Git</li>
-  <li>Node.js >= 16.x</li>
-  <li>NPM or Yarn</li>
-</ul>
-
-**Step 1:** Install project dependencies
+**Step 1:** Upload Project In Your Server.
 
 <p>
-  Navigate to the project directory and install project dependencies by running
-  the following command:
+  To install FastAI on your server, you first need to upload the source code.
+  This code can be downloaded as a zip file from the FastAI website. Once the
+  download is complete, you can upload the zip file to your server using a tool
+  like FTP. Once the file is uploaded, you can then extract the contents of the
+  zip file on your server. This can typically be done using a file manager or
+  command-line tools like unzip. With the files extracted, you can then proceed
+  to configure and customize FastAI according to your needs.
 </p>
-
-```bash filename="composer""
-composer install
-```
 
 **Step 2:** Create a .env file
 
 <p>
-  Create a .env file by copying the .env.example file and updating the database
-  credentials and other configuration variables.
-</p>
-
-```bash filename="make env file"
-cp .env.example .env
-```
-
-**Step 3:** Generate a new application key
-
-<p>Generate a new application key by running the following command:</p>
-
-```bash filename="generate public key"
-php artisan key:generate
-```
-
-### Deployment
-
-**Now it's ready to deploy in your server.**
-
-<p>
-  Before deploying your Laravel application, it is important to ensure that the
-  server meets the necessary requirements. This includes installing PHP 7.4 or
-  later, Composer, Node.js, and a database such as MySQL. PHP is required to run
-  Laravel, while Composer is used to install the application's dependencies.
-  Node.js is necessary for installing dependencies of front-end frameworks.
-  Finally, a database such as MySQL is needed to store and manage your
-  application's data. By making sure that these tools are installed on the
-  server, you can ensure that your Laravel application will run smoothly and
-  efficiently. After complete deployment, you need to follow bellow
-  instructions.
+  After extracting the FastAI source code on your server, the next step is to
+  create a .env file. This is a simple process, as you will find an .env.example
+  file included in the extracted files. To create the .env file, simply make a
+  copy of the .env.example file and rename it to .env. Once you have done this,
+  you can then edit the file and add your own configurations and settings. The
+  .env file is an essential part of the FastAI setup, as it contains important
+  details such as database credentials, API keys, and other application
+  settings. By configuring this file correctly, you can ensure that FastAI runs
+  smoothly and securely on your server.
 </p>
 
 ### Necessary Setup
 
 import { Card, Cards } from "nextra-theme-docs";
 
-<p className="mt-4">
-  **Step 1:** When successfully done deployment, goto to your app url got to the
-  `/install` route.
-</p>
+<p className="mt-4">**Step 1:** First you need to create database</p>
 <p>
-  Example `https://your-domain.com/install` then you will see the below page and
-  click the `Check Requirement` button
+  Before you can start using FastAI, you will need to create a database to store
+  its data. This is an important step in the installation process, as the
+  database details will be required to complete the necessary setup.
+  Fortunately, creating a database is a simple process and can be done using a
+  variety of tools and platforms. If you are unsure of how to create a database,
+  you can refer to the video instruction provided by FastAI, which will guide
+  you through the process step-by-step. The video will cover important details
+  such as database name, username, and password, which are all necessary for the
+  successful setup of FastAI. With your database created and configured, you can
+  then proceed to complete the FastAI installation and begin using its powerful
+  features.
+</p>
+
+<p className="mt-4">
+  After creating the database, you have to collect the the database info like
+  database name, database username, and database password
+</p>
+
+<p className="mt-4">
+  **Step 2:** When successfully done the database creation, open your app url in
+  your browser then got to the `/setup` route. Example
+  `https://your-domain.com/setup` then you will see the below page. If all
+  requirement is correct then you will see the correct checkmark on the right
+  side. Now click the `Next Step` button to go to next step.
 </p>
 
 <Card image>
-  <>![](/assets/installer-one.jpg)</>
+  <>![](/assets/installer-one.png)</>
 </Card>
 
 <p className="mt-6 mb-3">
-  **Step 2:** Now here Laravel Installer will check the server requirements. If
-  the requirement is ok then you will see the success checkmark otherwise you
-  will see the red error checkmark. If server requirements is ok then you can
-  click `Check Permission` button to got to next step
+  **Step 3:** Now here you will see the Application Name, Environment, App
+  debug, and App key. Environment by default local selected, you have to change
+  it and select production. Then app debug true selected but it should be false.
+  After that app key, if you want to change app key then you have to click
+  `Generate Key` button. Now click `Next Step` button to go to next step.
 </p>
 
 <Card image>
-  <>![](/assets/installer-two.jpg)</>
+  <>![](/assets/installer-two.png)</>
 </Card>
 
 <p className="mt-6 mb-3">
-  **Step 3:** Now here Laravel Installer will check the app permissions. If the
-  permissions is ok then you will see the success checkmark otherwise you will
-  see the red error checkmark. If app permissions is ok then you can click
-  `Configure Environment` button to got to next step
+  **Step 4:** In this step, you have to provide the database name, database
+  username, and database password. After that, you check whether the database
+  info is correct or wrong. To check this you have to click the `Test
+  Connection` button.
 </p>
 
 <Card image>
-  <>![](/assets/installer-three.jpg)</>
+  <>![](/assets/installer-three.png)</>
+</Card>
+
+<p className="mt-4 mb-3">
+  If the database connection is correct then you will the `Seems Ok`. Now click
+  `Next Step` button to go to next step.
+</p>
+
+<Card image>
+  <>![](/assets/installer-four.png)</>
 </Card>
 
 <p className="mt-6 mb-3">
-  **Step 4:** In here you will get two option to confiture your environment. One
-  is from mode and another one is classic mode. You can any one to got to next
-  step
+  **Step 5:** When you will navigate here then you have done all the previous
+  steps successfully. Now you need to click `Confirm` button to complete the
+  installation of your app.
 </p>
 
 <Card image>
-  <>![](/assets/installer-four.jpg)</>
+  <>![](/assets/installer-five.png)</>
 </Card>
 
 <p className="mt-6 mb-3">
-  **Step 5:** If you select the classic mode to configure your environment, then
-  you have to set up the environment with the key-value pair.
+  Congratulations, you have successfully setup your app configuration. If you
+  need more helpful resources then you can follow the video instruction below.
 </p>
 
-<Card image>
-  <>![](/assets/installer-five.jpg)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  **Step 6:** When you you will select form mode to setup your environment, then
-  you can see the below interface. Now you can setup your environment down
-  below. When you will finish the environment setup, then laravel Installer will
-  create your database table seed your database also.
-</p>
-
-<Card image>
-  <>![](/assets/installer-six.jpg)</>
-</Card>
-
-<Card image>
-  <>![](/assets/installer-seven.jpg)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  **Step 7:** When will be environment configure successfully done, then you
-  will see the report of table migration and database seeder, as like below
-</p>
-
-<Card image>
-  <>![](/assets/installer-eight.jpg)</>
-</Card>
-
-<p className="mt-6 mb-3">
-  Congratulations, you have successfully setup your app configuration by using
-  the Laravel Installer package.
-</p>
+<h6 className="font-bold text-lg mt-2 mb-2 text-gray-950">Video Instruction</h6>
+<div className="border border-2 border-gray-300 rounded-md overflow-hidden">
+  <div className="relative pb-[56.25%] h-0">
+    <iframe
+      frameborder="0"
+      allowfullscreen
+      mozallowfullscreen
+      webkitallowfullscreen
+      src="https://www.loom.com/embed/e73aa88814ad43cb9fe794945bb81990?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true"
+      className=" absolute top-0 left-0 w-full h-full"
+    ></iframe>
+  </div>
+</div>
