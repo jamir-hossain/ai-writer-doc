@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const logo = (
   <div className="flex items-center">
-    <img className="w-8 h-8" src="/assets/FastAI.png" alt="" />
+    <img className="w-8 h-8" src="/assets/fastai.png" alt="" />
     <p className="text-lg font-medium ml-4">FastAI</p>
   </div>
 );
