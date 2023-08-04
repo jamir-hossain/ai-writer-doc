@@ -34,34 +34,19 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="description"
-          content="Make beautiful websites with Next.js & MDX."
+          content="Best AI-Based Tool You. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chatbots to get help."
         />
         <meta
           name="og:description"
-          content="Make beautiful websites with Next.js & MDX."
+          content="Best AI-Based Tool You. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chatbots to get help."
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site:domain" content="nextra.site" />
-        <meta name="twitter:url" content="https://nextra.site" />
+
         <meta
           name="og:title"
           content={title ? title + " – UI-Lib" : "UI-Lib"}
         />
         <meta name="apple-mobile-web-app-title" content="UI-Lib" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link
-          rel="icon"
-          href="/favicon-dark.svg"
-          type="image/svg+xml"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link
-          rel="icon"
-          href="/favicon-dark.png"
-          type="image/png"
-          media="(prefers-color-scheme: dark)"
-        />
+        <link rel="icon" href="/assets/fastai.png" type="image/png" />
       </>
     );
   },
