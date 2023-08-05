@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const logo = (
   <div className="flex items-center">
     <img className="w-8 h-8" src="/assets/fastai.png" alt="" />
-    <p className="text-lg font-medium ml-4">FastAI</p>
+    <p className="text-lg font-medium ml-4">FastAI Documentation</p>
   </div>
 );
 
@@ -34,11 +34,11 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="description"
-          content="Best AI-Based Tool You. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chatbots to get help."
+          content="FastAI it's an AI-based tool. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chat bots to get help."
         />
         <meta
           name="og:description"
-          content="Best AI-Based Tool You. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chatbots to get help."
+          content="FastAI it's an AI-based tool. It will help you to generate text content, images, text-to-audio conversion, and audio-to-text conversion according to your requirement. Also, you can chat with different types of chat bots to get help."
         />
 
         <meta
