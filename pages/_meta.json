@@ -1,9 +1,8 @@
 {
   "index": "Overview",
   "installation": "Installation",
-  "app-settings": "Configuration Settings",
-  "auth-settings": "Auth Settings",
   "global-settings": "Global Settings",
+  "auth-settings": "Auth Settings",
   "smtp-settings": "SMTP Settings",
   "payment-settings": "Payment Settings",
   "home-page-update": "Home Page Update",
