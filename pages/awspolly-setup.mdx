@@ -1,0 +1,135 @@
+import { Card, Cards } from "nextra-theme-docs";
+
+### Overview
+
+<p className="my-4">
+  Additionally, you'll require AWS credentials as we've incorporated AWS Polly
+  for text-to-speech functionality. This step is crucial to activate this
+  feature within your application. But if you don't setup this settings then
+  your text-to-speech feature will not activate.
+</p>
+<Card image>
+  <>![](/assets/pages/aws-polly.png)</>
+</Card>
+
+### AWS Key & Secret
+
+<p className="my-4">
+  You need to follow some simple steps to get AWS Polly credentials. Here's how
+  you can obtain these credentials
+</p>
+
+<ul className="list-decimal pl-10">
+  <li className="mt-2">
+    <span className="font-medium">Sign Up and Log In:</span> Begin by visiting
+    the AWS platform at https://aws.amazon.com . Create an account if you don't
+    have one and log in.
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Access Security Credentials:</span> Once
+    logged in, click the profile name then you will see a popup. In the popup
+    section, you see the menu list here you have to select "Security
+    credentials".
+    <Card image>
+      <>![](/assets/aws-polly/step-1.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Create New User:</span> Here you will find a
+    left sidebar. Now you need to go to "Access management" > "User". Then you
+    see the user list. From here you have to create a new user for AWS Polly
+    service. So now click the "Create User" button.
+    <Card image>
+      <>![](/assets/aws-polly/step-2.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">User Name:</span> After that, you will find an
+    input field where you have to put the user name. Then click the "Next"
+    button to go next step.
+    <Card image>
+      <>![](/assets/aws-polly/step-3.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Permissions Setup:</span> This spet you will
+    see different options. But you need to interact with only 2 sections.
+    <ul class="list-disc ml-4">
+      <li className="mt-2">
+        <span className="font-medium">
+          The first one will be "Permission options" section:
+        </span>
+        <p>
+          In this section, you will see three options. But you have to select
+          "Attach policies directly" section.
+        </p>
+      </li>
+      <li className="mt-2">
+        <span className="font-medium">
+          The second one will be "Permission policies" section:
+        </span>
+        <p>
+          From this section you will find a search input field, where you just
+          search "Polly" and then you will see "AmazonPollyFullAccess" now
+          select this option.
+        </p>
+      </li>
+    </ul>
+    <Card image>
+      <>![](/assets/aws-polly/step-4.png)</>
+    </Card>
+    <p className="mt-2 mb-4">Then click the "Next" button to go next step.</p>
+  </li>
+  <li className="mt-2">
+    <span className="font-medium">User Creation:</span> From here you will see
+    different options. But you don't need to interact with any sections. Just
+    click the "Create user" button.
+    <Card image>
+      <>![](/assets/aws-polly/step-5.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">User Summary:</span> Here you will your user
+    have created. So click on the user name which you have created now.
+    <Card image>
+      <>![](/assets/aws-polly/step-6.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Create Access Key:</span> In this step you
+    will see the "Summary" section. Here you will find "Create access key"
+    button. Just click here.
+    <Card image>
+      <>![](/assets/aws-polly/step-7.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Use Case Selection:</span> From this section
+    you have to select the "use case" of this access key. I have selected
+    "Third-party service". Also, you need to check the confirmation. Then click
+    the "Next" button to go next step.
+    <Card image>
+      <>![](/assets/aws-polly/step-8.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Access Key Description:</span> Here you will
+    find an input field, where you can describe about your access key. But this
+    is an optional field. You can skip or put a value here. Now click the
+    "Create access key" button.
+    <Card image>
+      <>![](/assets/aws-polly/step-9.png)</>
+    </Card>
+  </li>
+  <li className="mt-4">
+    <span className="font-medium">Final Step:</span> This is the final step.
+    Here you see that, "Access key" and "Secret access key". You just need to
+    collect these to use the AWS key and AWS Secret in your application from
+    global settings.
+    <Card image>
+      <>![](/assets/aws-polly/step-10.png)</>
+    </Card>
+  </li>
+</ul>
+
+This sequence will help you acquire AWS credentials required for utilizing the AWS Polly service in your application.

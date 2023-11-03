@@ -2,9 +2,11 @@
   "index": "Overview",
   "installation": "Installation",
   "global-settings": "Global Settings",
-  "auth-settings": "Auth Settings",
+  "openai-setup": "OpenAI Setup",
+  "awspolly-setup": "AWS Polly Setup",
   "smtp-settings": "SMTP Settings",
+  "google-login-system": "Google Login System",
   "payment-settings": "Payment Settings",
-  "version-update": "Version Update",
-  "video-instruction": "Video Instruction"
+  "faqs-answers": "FAQs and Answers",
+  "version-update": "Version Update"
 }
